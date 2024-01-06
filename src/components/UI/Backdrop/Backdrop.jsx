@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   background-image: url(${(props) => props.image});
   background-position: center;
   background-size: cover;
+  filter: brightness(60%);
 `;
 
 function Backdrop({ img, children }) {
