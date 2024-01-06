@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/Yougile/static/css/main.31d6cfe0.css",
+    "main.js": "/Yougile/static/js/main.95e568c3.js",
+    "index.html": "/Yougile/index.html",
+    "main.95e568c3.js.map": "/Yougile/static/js/main.95e568c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.95e568c3.js"
+  ]
+}
