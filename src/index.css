@@ -13,3 +13,9 @@ body {
   font-size: 16px;
 
 }
+
+
+
+html[data-theme="dark"] {
+  --background-card: #252b35;
+}
