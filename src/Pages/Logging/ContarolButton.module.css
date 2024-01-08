@@ -1,0 +1,69 @@
+.container-button {
+   position: relative;
+   margin-bottom: 70px;
+}
+
+.toggle {
+   position: relative;
+   width: 150px;
+   height: 24px;
+}
+
+.toggle input[type="checkbox"] {
+   display: none;
+}
+
+.toggle label {
+   position: absolute;
+   top: 30px;
+   left: 0;
+   width: 28px;
+   height: 14px;
+   background-color: var(--color-gray-black);
+   border-radius: 17px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.toggle label::before {
+   content: "";
+   position: absolute;
+   top: 2px;
+   left: 3px;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: var(--color-white);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   transition: transform 0.3s ease;
+}
+
+.toggle input:checked+label {
+   background-color: var(--color-pink);
+}
+
+.toggle input:checked+label::before {
+   transform: translateX(12px);
+}
+
+.text {
+   font-size: var(--12);
+   color: var(--text-gray);
+   position: absolute;
+   top: 37px;
+   left: 40px;
+   transform: translateY(-50%);
+}
+
+.link-registration {
+   font-size: var(--12);
+   color: var(--text-gray);
+   text-decoration: none;
+   position: absolute;
+   right: 0;
+   top: 32px;
+
+   &:hover {
+      color: var(--color-pink);
+   }
+}

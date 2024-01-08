@@ -28,8 +28,10 @@ html[data-theme="dark"] {
   --color-pink: #e71a6e;
   --color-white: #fff;
   --color-black: #000;
-  --color-green: #9bdf60;
-  
+
+
+  --border-gray: #63666c;
+
   --10: 10px;
   --12: 12px;
   --14: 14px;
