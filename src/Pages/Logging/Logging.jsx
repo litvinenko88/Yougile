@@ -11,29 +11,42 @@ function Logging({ children }) {
 
         <form className={styles["container-form"]}>
           <h2 className={styles["error-text"]}>Неверный логин или пароль</h2>
-
           <div className={styles["container-input"]}>
-            <input
-              className={styles.input}
-              type="text"
-              id="email-input"
-              placeholder=""
-            />
-            <label className={styles.label} htmlFor="email-input">
-              Почта
-            </label>
+            <div className={styles["inner-input"]}>
+              <input
+                className={styles.input}
+                type="text"
+                id="email-input"
+                placeholder=""
+              />
+              <label className={styles.label} htmlFor="email-input">
+                Почта
+              </label>
+            </div>
+
+            <div className={styles["inner-input"]}>
+              <input
+                className={styles.input}
+                type="password"
+                id="password-input"
+                placeholder=" "
+              />
+              <label className={styles.label} htmlFor="password-input">
+                Пароль
+              </label>
+            </div>
           </div>
 
-          <div className={styles["container-input"]}>
-            <input
-              className={styles.input}
-              type="password"
-              id="password-input"
-              placeholder=" "
-            />
-            <label className={styles.label} htmlFor="password-input">
-              Пароль
-            </label>
+          <div className={styles["container-button"]}>
+            <div className={styles.toggle}>
+              <input id="toggle-switch" type="checkbox" />
+              <label for="toggle-switch"></label>
+              <h2 className={styles.text}>Запомнить меня</h2>
+            </div>
+
+            <a href="#" className={styles["link-registration"]}>
+              Регистрация
+            </a>
           </div>
         </form>
       </Container>

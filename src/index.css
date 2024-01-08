@@ -10,7 +10,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--16);
 
 }
 
@@ -23,8 +23,20 @@ html[data-theme="dark"] {
   --text-gray: #bdc1c8;
   --text-black: #000;
 
-  --color-gray: #a5abba;
+  --color-gray-black: #a5abba;
+  --color-gray-light: #f6faff;
   --color-pink: #e71a6e;
   --color-white: #fff;
   --color-black: #000;
+  --color-green: #9bdf60;
+  
+  --10: 10px;
+  --12: 12px;
+  --14: 14px;
+  --16: 16px;
+  --18: 18px;
+  --20: 20px;
+  --22: 22px;
+  --24: 24px;
+  --26: 26px;
 }
