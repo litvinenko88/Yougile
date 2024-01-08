@@ -2,6 +2,7 @@ import styles from "./Logging.module.css";
 import Container from "../../components/UI/Container/Container";
 import InputLogging from "./InputLogging";
 import ContarolButton from "./ContarolButton";
+import ButtonForm from "../../components/UI/Button/ButtonForm";
 
 function Logging({ children }) {
   return (
@@ -15,7 +16,7 @@ function Logging({ children }) {
           <h2 className={styles["error-text"]}>Неверный логин или пароль</h2>
           <InputLogging />
           <ContarolButton />
-          <button className={styles["btn-entrance"]}>Авторизоваться</button>
+          <ButtonForm text="Авторизоваться" />
         </form>
       </Container>
     </div>

@@ -1,32 +1,21 @@
-import styles from "./InputLogging.module.css";
+import InputForm from "../../components/UI/InputForm/InputForm";
 
 function InputLogging() {
   return (
-    <div className={styles["container-input"]}>
-      <div className={styles["inner-input"]}>
-        <input
-          className={styles.input}
-          type="text"
-          id="email-input"
-          placeholder=""
-        />
-        <label className={styles.label} htmlFor="email-input">
-          Почта
-        </label>
-      </div>
-
-      <div className={styles["inner-input"]}>
-        <input
-          className={styles.input}
-          type="password"
-          id="password-input"
-          placeholder=" "
-        />
-        <label className={styles.label} htmlFor="password-input">
-          Пароль
-        </label>
-      </div>
-    </div>
+    <>
+      <InputForm
+        type="email"
+        id="email-input"
+        text="Логин"
+        radius="5px 5px 0 0"
+      />
+      <InputForm
+        type="password"
+        id="password-input"
+        text="Пароль"
+        radius="0 0 5px 5px"
+      />
+    </>
   );
 }
 

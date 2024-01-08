@@ -1,6 +1,6 @@
 .container-button {
    position: relative;
-   margin-bottom: 70px;
+   margin-bottom: 80px;
 }
 
 .toggle {
@@ -15,7 +15,7 @@
 
 .toggle label {
    position: absolute;
-   top: 30px;
+   top: 45px;
    left: 0;
    width: 28px;
    height: 14px;
@@ -50,7 +50,7 @@
    font-size: var(--12);
    color: var(--text-gray);
    position: absolute;
-   top: 37px;
+   top: 51px;
    left: 40px;
    transform: translateY(-50%);
 }
@@ -61,7 +61,7 @@
    text-decoration: none;
    position: absolute;
    right: 0;
-   top: 32px;
+   top: 46px;
 
    &:hover {
       color: var(--color-pink);

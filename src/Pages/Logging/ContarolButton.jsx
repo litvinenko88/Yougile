@@ -1,4 +1,5 @@
 import styles from "./ContarolButton.module.css";
+import { Link } from "react-router-dom";
 
 function ContarolButton() {
   return (
@@ -9,9 +10,9 @@ function ContarolButton() {
         <h2 className={styles.text}>Запомнить меня</h2>
       </div>
 
-      <a href="#" className={styles["link-registration"]}>
+      <Link to="/registration" className={styles["link-registration"]}>
         Регистрация
-      </a>
+      </Link>
     </div>
   );
 }
