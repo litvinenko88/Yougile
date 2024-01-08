@@ -13,13 +13,27 @@ function Logging({ children }) {
           <h2 className={styles["error-text"]}>Неверный логин или пароль</h2>
 
           <div className={styles["container-input"]}>
-            <label className={styles.label}>Email address</label>
-            <input className={styles.input} type="text" />
+            <input
+              className={styles.input}
+              type="text"
+              id="email-input"
+              placeholder=""
+            />
+            <label className={styles.label} htmlFor="email-input">
+              Email address
+            </label>
           </div>
 
           <div className={styles["container-input"]}>
-            <label className={styles.label}>Password</label>
-            <input className={styles.input} type="password" />
+            <input
+              className={styles.input}
+              type="password"
+              id="password-input"
+              placeholder=" "
+            />
+            <label className={styles.label} htmlFor="password-input">
+              Password
+            </label>
           </div>
         </form>
       </Container>
