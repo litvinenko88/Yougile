@@ -21,8 +21,10 @@ html[data-theme="dark"] {
   --background-tab: #202224;
 
   --text-gray: #bdc1c8;
+  --text-black: #000;
 
   --color-gray: #a5abba;
   --color-pink: #e71a6e;
   --color-white: #fff;
+  --color-black: #000;
 }

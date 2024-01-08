@@ -39,7 +39,7 @@
 }
 
 .label {
-   color: var(--text-gray);
+   color: var(--text-black);
    position: absolute;
    top: 50%;
    left: 10px;
@@ -55,7 +55,6 @@
    padding: 20px 10px 10px 10px;
    font-size: 16px;
    border-radius: 5px;
-   background-color: #f8f8f8;
    border-bottom: 1px solid var(--color-gray);
 }
 
@@ -74,5 +73,5 @@
 .input:not(:placeholder-shown)+.label {
    top: 10px;
    font-size: 10px;
-   color: #d80000;
+   color: var(--text-gray);
 }

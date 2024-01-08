@@ -20,7 +20,7 @@ function Logging({ children }) {
               placeholder=""
             />
             <label className={styles.label} htmlFor="email-input">
-              Email address
+              Почта
             </label>
           </div>
 
@@ -32,7 +32,7 @@ function Logging({ children }) {
               placeholder=" "
             />
             <label className={styles.label} htmlFor="password-input">
-              Password
+              Пароль
             </label>
           </div>
         </form>
