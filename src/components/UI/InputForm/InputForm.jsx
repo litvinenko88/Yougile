@@ -1,6 +1,6 @@
 import styles from "./InputForm.module.css";
 
-function InputForm({ type, id, text, radius }) {
+function InputForm({ type, id, text, radius, value, onChange }) {
   return (
     <div className={styles["inner-input"]}>
       <input
@@ -8,6 +8,8 @@ function InputForm({ type, id, text, radius }) {
         type={type}
         id={id}
         placeholder=""
+        value={value}
+        onChange={onChange}
         style={{ borderRadius: `${radius}` }}
       />
       <label className={styles.label} htmlFor={id}>

@@ -3,8 +3,10 @@ import Container from "../../components/UI/Container/Container";
 import InputLogging from "./InputLogging";
 import ContarolButton from "./ContarolButton";
 import ButtonForm from "../../components/UI/Button/ButtonForm";
+import { useNavigate } from "react-router-dom";
 
 function Logging({ children }) {
+  const navigate = useNavigate();
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -16,7 +18,7 @@ function Logging({ children }) {
           <h2 className={styles["error-text"]}>Неверный логин или пароль</h2>
           <InputLogging />
           <ContarolButton />
-          <ButtonForm text="Авторизоваться" />
+          <ButtonForm onClick={() => navigate("/")} text="Авторизоваться" />
         </form>
       </Container>
     </div>
